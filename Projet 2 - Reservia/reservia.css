@@ -1,0 +1,33 @@
+/*****
+Pictures
+*****/
+#logo_reservia {
+    float: left;
+}
+
+/**********
+Navigation
+**********/
+
+nav {
+    float: right;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    text-align: right;
+}
+
+/*****
+Text setting
+*****/
+
+#title {
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+}
+
