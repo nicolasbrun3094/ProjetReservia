@@ -1,4 +1,4 @@
-body {
+.body {
     margin: 40px;
     margin-top: 25px;
 }
@@ -13,6 +13,11 @@ Pictures
 .pic1 {
     border: 1px black unset;
     border-radius: 5px;
+}
+
+#conteneur {
+    background-color: #F2F2F2;
+    border-radius: 15px;
 }
 
 /**********
@@ -45,3 +50,14 @@ a {
     text-decoration: none;
 }
 
+/*****
+Footer
+*****/
+
+footer {
+    background-color:#F2F2F2;
+}
+ 
+ul {
+    list-style: none;
+}
