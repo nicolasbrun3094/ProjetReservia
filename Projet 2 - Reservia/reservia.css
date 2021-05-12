@@ -1,8 +1,18 @@
+body {
+    margin: 40px;
+    margin-top: 25px;
+}
+
 /*****
 Pictures
 *****/
 #logo_reservia {
     float: left;
+}
+
+.pic1 {
+    border: 1px black unset;
+    border-radius: 5px;
 }
 
 /**********
@@ -13,10 +23,14 @@ nav {
     float: right;
 }
 
-ul {
+nav ul {
     list-style: none;
     display: flex;
     text-align: right;
+}
+
+nav li {
+    margin-right: 15px;
 }
 
 /*****

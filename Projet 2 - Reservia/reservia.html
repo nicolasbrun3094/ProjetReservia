@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8"/>
         <link rel="stylesheet" href="reservia.css"/>
+        <link rel="stylesheet" href="css/all.min.css">
         <title>Reservia</title>
     </head>
     <body>
@@ -30,18 +31,37 @@
 
         <!--Search-->
         <form method="POST" action="traitement.php">
-            <label for="country">Ville</label>
+            <label for="country"><i class="fas fa-search"></i></label>
             <input type="text" name="country" id="country" placeholder="Marseille,France"/>
          </form>
          <p><strong>Filtres</strong></p>
+         <!--A corriger erreur d'affichage-->
+         <i class="fas fa-money-bill-wave-alt"></i>
+         <i class="fas fa-child"></i>
+         <i class="fas fa-heart"></i>
+         <i class="fas fa-dog"></i>
+         <!--A corriger erreur d'affichage-->
          <!--Search-->
+
+         <p><em><i class="fas fa-info-circle"></i>Plus de 500 logements disponible dans cette ville</em></p>
 
          <section>
         <h2 id="#hebergements">Hébergements à Marseille</h2>
+        <figure>
+            <img class="pic1" src="../Projet 2 - Reservia/images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt ="auberge de la cannebiere" width="300px" height="150px"/>
+            <figcaption><strong>Auberge de la Cannebiere</strong></br>A Partir de 25€</figcaption>
+            <img class="pic1" src="../Projet 2 - Reservia/images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="hotel du port" width="300px" height="150px"/>
+            <img class="pic1" src="../Projet 2 - Reservia/images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="hotel les mouets" width="300px" height="150px"/>
+            <img class="pic1" src="../Projet 2 - Reservia/images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="hôtel de la mer" width="300px" height="150px"/>
+            <img class="pic1" src="../Projet 2 - Reservia/images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="auberge le panier" width="300px" height="150px"/>
+            <img class="pic1" src="../Projet 2 - Reservia/images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="hôtel chez amina" width="300px" height="150px"/>
+        </figure>
+        <p><strong>Afficher plus</strong></p>
         </section>
         
         <section>
         <h2 id="#activites">Activités à Marseille</h2>
+        <img src="../Projet 2 - Reservia/images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="vieux port" width="300px" height="400px"/>
         </section>
 
         <footer>
