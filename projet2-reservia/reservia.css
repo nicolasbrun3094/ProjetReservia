@@ -76,11 +76,18 @@ Pictures Host
     border-radius: 5px;
     width: 300px;
     height: 150px;
+    margin: auto;
 }
 
 .host {
-    background-color: #F2F2F2;
+    background-color: white;
     border-radius: 15px;
+}
+
+.background-host {
+    background-color:#F2F2F2;
+    border-radius: 15px;
+    width: 50%;
 }
 
 /*****
@@ -92,7 +99,7 @@ Pictures Trend
     border-radius: 15px;
 }
 
-.pictrend {
+.pic {
     display: flex;
     width: 300px;
     height: 150px;
