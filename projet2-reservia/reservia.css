@@ -1,5 +1,14 @@
 /*****
-Général
+P O L I C E 
+*****/
+
+@font-face {
+    font-family: fc;
+    src: url(https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap);
+}
+
+/*****
+G É N É R A L 
 *****/
   
 header {
@@ -8,8 +17,7 @@ header {
 }
 
 body {
-    margin: 0;
-    padding: 0;
+    font-family: 'Raleway', sans-serif;
 }
 
 .body {
@@ -21,6 +29,10 @@ ul {
     list-style: none;
 }
 
+.puce {
+    margin-top: 10px;
+}
+
 .blue {
     color:#0065FC;
 }
@@ -30,20 +42,24 @@ ul {
 }
 
 /*****
-Text setting
+T E X T
 *****/
 
 h2 {
-     margin-left: 25px;
+     font-weight: bold;
+     margin-left: 40px;
  }
 
  h3 {
+
+}
+
+h4 {
     font-size: 1.15em;
-    font-weight: bold;
 }
 
 /*****
-Header
+H E A D E R 
 *****/
 
 #logo_reservia { 
@@ -52,7 +68,7 @@ Header
 }
 
 /*****
-Search
+S E A R C H 
 *****/
 
 .box-search {
@@ -61,26 +77,49 @@ Search
 }
 
 /*****
-Filtres
+F I L T R E S 
 *****/
 .filtres {
     display: flex;
     border-radius: 50px;
+    margin-top: 20px;
 }
 
 .boutton {
+    border-radius: 50%;
+    background-color: white;
+    border: 1px black solid;
+    padding: 20px;
+    margin-top: 10px;
+    height: 1px;
+    color: #0065FC;
+    display: flex;
+    align-items: center;
+}
+
+.boutton2 {
     border-radius: 100px;
     background-color: white;
     border: 1px black solid;
+    padding: 20px;
+    margin-top: 10px;
+    height: 1px;
+    display: flex;
+    align-items: center;
 }
 
 .symbolefiltre {
     border: 1px black solid;
     border-radius: 50%;
+    color: #0065FC;    
+}
+
+.top {
+    margin-right: 65px;
 }
 
 /*****
-Navigation
+N A V I G A T I O N 
 *****/
 
 nav ul {
@@ -97,21 +136,26 @@ a {
     text-decoration: none;
 }
 
+#id {
+    justify-content: flex-end;
+    display: flex;
+}
+
 
 /*****
-Pictures Host
+P I C T U R E S__H O S T 
 *****/
 
 .pic1 {
     display: flex;
     flex-direction: column;
     margin-top: 10px;
-    border: 1px black unset;
-    border-radius: 5px;
-    width: 237px;
+    width: 210px;
     height: 108px;
     margin: auto;
     box-sizing: border-box;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 figcaption {
@@ -125,31 +169,30 @@ figcaption p {
 .host {
     background-color: white;
     border-radius: 15px;
-    width: 243px;
-    height: 192px;
-    border: 1px black solid;
+    width: 215px;
+    height: 200px;
     padding: 2.5px;
     box-shadow: 0 0 15px;
     box-sizing: border-box;
+    align-items: center;
 }
 
 .host2 {
     display: flex;
-    flex-direction: column;
     padding: 2.5px;
     background-color: white;
     border-radius: 15px;
-    width: 243px;
+    width: 339px;
     height: 192px;
     border: 1px black solid;
     box-shadow: 0 0 15px;
     box-sizing: border-box;
+    align-items: center;
 }
 
 .info {
     background-color: #0065FC;
     color: white;
-    border: 1px black solid;
     border-radius: 50%;
     margin-right: 1em;
 }
@@ -157,8 +200,7 @@ figcaption p {
 .background-host {
     background-color:#F2F2F2;
     border-radius: 15px;
-    width: 1200px;
-    border: 1px black solid;
+    width: 900px;
 }
 
 .dispoflex {
@@ -166,51 +208,62 @@ figcaption p {
     flex-wrap: wrap;
 }
 
+.more {
+    margin-left: 40px;
+}
+
 /*****
-Pictures Trend
+P I C T U R E S__T R E N D 
 *****/
 
 .loc {
     background-color:#F2F2F2 ;
     border-radius: 15px;
 }
-
+/*
 .pic {
     display: flex;
     width: 300px;
-    height: 150px;
+    height: 122px;
 }
+*/
 
 .pic2 {
     display: flex;
     flex-direction: column;
     border: 1px black unset;
-    border-radius: 5px;
-    width: 237px;
-    height: 108px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 122px;
+    height: 180px;
     margin: auto;
 }
 
 .background-host-stonks {
     background-color:#F2F2F2;
     border-radius: 15px;
-    width: 417px;
+    width: 405px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 /*****
-Activity
+A C T I V I T Y 
 *****/
 
 .activity1 {
     width: 300px;
-    height: 400px;
-    border-radius: 15px;    
+    height: 450px;
+    border-top-left-radius: 15px; 
+    border-top-right-radius: 15px;   
 }
 
 .activity2 {
     width: 250px;
     height: 175px;
-    border-radius: 15px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
 }
 
 .conteneuractivity {
@@ -222,13 +275,24 @@ Activity
     flex-direction: column;
 }
 
+.figureactivity {
+    border-radius: 15px;
+    box-shadow: 0 0 15px;
+}
+
+.nameactivity {
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
 /*****
-Footer
+F O O T E R 
 *****/
 
 footer {
     background-color:#F2F2F2;
     display: flex;
+    justify-content: space-between;
 }
 
 .footer {
@@ -237,11 +301,12 @@ footer {
     padding: 0 2rem;
     box-sizing: border-box;
     width: 1440px;
+    justify-content: space-between;
 }
 
 .all-host {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between
 }
 .tittle-stonks {
     display: flex;
@@ -249,7 +314,10 @@ footer {
     justify-content: space-between;
 }
 
-#id {
-    justify-content: flex-end;
+/*****
+.bulles {
+    border: 1px black solid;
     display: flex;
+    border-radius: 100px;
 }
+*****/
