@@ -2,10 +2,10 @@
 P O L I C E 
 *****/
 
-@font-face {
-    font-family: fc;
-    src: url(https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap);
-}
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,200&display=swap');
+
 
 /*****
 G É N É R A L 
@@ -14,10 +14,15 @@ G É N É R A L
 header {
     display: flex;
     justify-content: space-between;
+    box-sizing: border-box;
+    margin-top: 48px;
 }
 
 body {
     font-family: 'Raleway', sans-serif;
+    justify-content: space-around;
+    margin: 0 50px 50px;
+    box-sizing: border-box;
 }
 
 .body {
@@ -39,6 +44,15 @@ ul {
 
 .grey {
     color: #F2F2F2; 
+}
+
+.fa-star{
+    display: flex;
+    align-items: flex-end;
+}
+
+.description {
+    margin-left: 1.5em;
 }
 
 /*****
@@ -64,6 +78,7 @@ H E A D E R
 
 #logo_reservia { 
     flex-direction: row;
+    margin-left: 1.5em;
     
 }
 
@@ -74,6 +89,31 @@ S E A R C H
 .box-search {
     border: 1px black unset;
     border-radius: 15px;
+    margin-left: 1.5em;
+}
+
+.fa-map-marker-alt{
+    border: 1px black solid;
+    background-color: #F2F2F2;
+    height: 45px;
+    width: 51px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.search{
+    background-color: #0065fc;
+    color: white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height: 45px;
+    width: 132px;
+    justify-content: space-around;
+}
+
+.town {
+    height: 45px;
+    width: 230px;
 }
 
 /*****
@@ -83,29 +123,89 @@ F I L T R E S
     display: flex;
     border-radius: 50px;
     margin-top: 20px;
+    margin-left: 1.5em;
+}
+
+.filtres2{
+    margin-left: 30px;
+    display: flex;
 }
 
 .boutton {
     border-radius: 50%;
     background-color: white;
-    border: 1px black solid;
-    padding: 20px;
     margin-top: 10px;
-    height: 1px;
     color: #0065FC;
     display: flex;
     align-items: center;
+    margin-left: 18px;
+}
+
+.fa-money-bill-wave-alt {
+    margin-bottom: 15px;
+    border-radius: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: #deebff;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 0 10px;
+}
+
+.fa-child {
+    margin-bottom: 15px;
+    border-radius: 50%;
+    padding-left: 12.5px;
+    padding-right: 12.5px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: #deebff;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 0 10px;
+}
+
+.fa-heart {
+    margin-bottom: 15px;
+    border-radius: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: #deebff;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 0 10px;
+}
+
+.fa-dog {
+    margin-bottom: 15px;
+    border-radius: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: #deebff;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 0 10px;
 }
 
 .boutton2 {
     border-radius: 100px;
     background-color: white;
-    border: 1px black solid;
     padding: 20px;
     margin-top: 10px;
     height: 1px;
     display: flex;
     align-items: center;
+    font-weight: bold;
+    position: relative;
+    z-index: 0;
+    margin-left: -10px;
+    box-shadow: 0 0 10px;
 }
 
 .symbolefiltre {
@@ -136,9 +236,23 @@ a {
     text-decoration: none;
 }
 
-#id {
+a:hover {
+    text-decoration: solid;
+    color: blue;
+    border-top: 1px blue solid;
+}
+
+#navigation {
     justify-content: flex-end;
     display: flex;
+}
+
+#hebergements {
+    margin-top: 45px;
+}
+
+#activites {
+    margin-top: 45px;
 }
 
 
@@ -150,7 +264,7 @@ P I C T U R E S__H O S T
     display: flex;
     flex-direction: column;
     margin-top: 10px;
-    width: 210px;
+    width: 231px;
     height: 108px;
     margin: auto;
     box-sizing: border-box;
@@ -160,6 +274,7 @@ P I C T U R E S__H O S T
 
 figcaption {
     margin-top: -15px;
+    margin-left: 10px;
 }
 
 figcaption p {
@@ -169,12 +284,12 @@ figcaption p {
 .host {
     background-color: white;
     border-radius: 15px;
-    width: 215px;
-    height: 200px;
     padding: 2.5px;
     box-shadow: 0 0 15px;
     box-sizing: border-box;
     align-items: center;
+    margin: 21px;
+    margin-top: 27px;
 }
 
 .host2 {
@@ -182,8 +297,8 @@ figcaption p {
     padding: 2.5px;
     background-color: white;
     border-radius: 15px;
-    width: 339px;
-    height: 192px;
+    width: 342px;
+    height: 144px;
     border: 1px black solid;
     box-shadow: 0 0 15px;
     box-sizing: border-box;
@@ -197,19 +312,25 @@ figcaption p {
     margin-right: 1em;
 }
 
+.dispo {
+    margin-left: 1.5em;
+    margin-bottom: 33px;
+}
+
 .background-host {
     background-color:#F2F2F2;
     border-radius: 15px;
-    width: 900px;
+    width: 870px;
 }
 
-.dispoflex {
+.dispo-host {
     display: flex;
     flex-wrap: wrap;
 }
 
 .more {
     margin-left: 40px;
+    font-weight: bold;
 }
 
 /*****
@@ -234,8 +355,8 @@ P I C T U R E S__T R E N D
     border: 1px black unset;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    width: 122px;
-    height: 180px;
+    width: 123px;
+    height: 135px;
     margin: auto;
 }
 
@@ -252,9 +373,14 @@ P I C T U R E S__T R E N D
 A C T I V I T Y 
 *****/
 
+.all-activity {
+    box-sizing: border-box;
+
+}
+
 .activity1 {
     width: 300px;
-    height: 450px;
+    height: 500px;
     border-top-left-radius: 15px; 
     border-top-right-radius: 15px;   
 }
@@ -266,8 +392,44 @@ A C T I V I T Y
     border-top-left-radius: 15px;
 }
 
+.ilefrioul {
+    width: 300px;
+    height: 160px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.fortpomegues {
+    width: 300px;
+    height: 240px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.notredame {
+    width: 300px;
+    height: 192px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.parc {
+    width: 300px;
+    height: 207px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.calanques {
+    height: 500px;
+    width: 300px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
 .conteneuractivity {
     display: flex;
+    box-sizing: border-box;
 }
 
 .conteneuractivity2 {
@@ -277,7 +439,7 @@ A C T I V I T Y
 
 .figureactivity {
     border-radius: 15px;
-    box-shadow: 0 0 15px;
+    box-shadow: 0 0 10px;
 }
 
 .nameactivity {
@@ -292,21 +454,23 @@ F O O T E R
 footer {
     background-color:#F2F2F2;
     display: flex;
-    justify-content: space-between;
+    margin-top: 55px;
 }
 
 .footer {
     display: flex;
-    margin: auto;
     padding: 0 2rem;
-    box-sizing: border-box;
     width: 1440px;
     justify-content: space-between;
 }
 
+.help {
+    font-weight: bold;
+}
+
 .all-host {
     display: flex;
-    justify-content: space-between
+    justify-content: space-around;
 }
 .tittle-stonks {
     display: flex;
@@ -315,9 +479,5 @@ footer {
 }
 
 /*****
-.bulles {
-    border: 1px black solid;
-    display: flex;
-    border-radius: 100px;
-}
+empiller elements css
 *****/
