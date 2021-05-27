@@ -10,7 +10,7 @@ P O L I C E
 /*****
 G É N É R A L 
 *****/
-  
+
 header {
     display: flex;
     justify-content: space-between;
@@ -21,11 +21,11 @@ header {
 body {
     font-family: 'Raleway', sans-serif;
     justify-content: space-around;
-    margin: 0 50px 50px;
+    margin: 0;
     box-sizing: border-box;
 }
 
-.body {
+.main {
     margin: 0 50px 50px;
     box-sizing: border-box;
 }
@@ -65,8 +65,8 @@ h2 {
  }
 
  h3 {
-
-}
+     font-size: 1em ;
+ }
 
 h4 {
     font-size: 1.15em;
@@ -92,14 +92,27 @@ S E A R C H
     margin-left: 1.5em;
 }
 
-.fa-map-marker-alt{
+.country {
+    background-color: #F2F2F2;
+    height: 45px;
+    width: 51px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    margin-bottom: 30px;
+    padding: 13px;
+    z-index: 1;
+    position: relative;
+}
+
+/*.fa-map-marker-alt{
     border: 1px black solid;
     background-color: #F2F2F2;
     height: 45px;
     width: 51px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-}
+    margin-bottom: 30px;
+}*/
 
 .search{
     background-color: #0065fc;
@@ -109,11 +122,20 @@ S E A R C H
     height: 45px;
     width: 132px;
     justify-content: space-around;
+    font-size: 1.25em;
+    position: relative;
+    z-index: 0;
+    margin-left: -10px;
+    border-style: none;
 }
 
 .town {
-    height: 45px;
+    height: 40px;
     width: 230px;
+    font-size: 1.25em;
+    position: relative;
+    z-index: 1;
+    margin-left: -5px;
 }
 
 /*****
@@ -126,7 +148,7 @@ F I L T R E S
     margin-left: 1.5em;
 }
 
-.filtres2{
+.iconefiltre{
     margin-left: 30px;
     display: flex;
 }
@@ -281,6 +303,11 @@ figcaption p {
     margin-top: -15px;
 }
 
+.all-host {
+    display: flex;
+    justify-content: space-around;
+}
+
 .host {
     background-color: white;
     border-radius: 15px;
@@ -312,7 +339,7 @@ figcaption p {
     margin-right: 1em;
 }
 
-.dispo {
+.infohost {
     margin-left: 1.5em;
     margin-bottom: 33px;
 }
@@ -341,13 +368,6 @@ P I C T U R E S__T R E N D
     background-color:#F2F2F2 ;
     border-radius: 15px;
 }
-/*
-.pic {
-    display: flex;
-    width: 300px;
-    height: 122px;
-}
-*/
 
 .pic2 {
     display: flex;
@@ -357,7 +377,6 @@ P I C T U R E S__T R E N D
     border-bottom-left-radius: 15px;
     width: 123px;
     height: 135px;
-    margin: auto;
 }
 
 .background-host-stonks {
@@ -369,6 +388,36 @@ P I C T U R E S__T R E N D
     flex-direction: column;
 }
 
+.tittle-stonks {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.star {
+    margin-top: 55px;
+}
+
+.star2 {
+    margin-top: 38px;
+}
+
+.star3 {
+    margin-top: 40px;
+}
+
+.chambreshotes {
+    margin-top: 4px;
+}
+
+.hotelsoleil {
+    margin-top: 5px;
+}
+
+.bleuetblanc {
+    margin-top: 5px;
+}
 /*****
 A C T I V I T Y 
 *****/
@@ -430,6 +479,7 @@ A C T I V I T Y
 .conteneuractivity {
     display: flex;
     box-sizing: border-box;
+    margin-top: -45px;
 }
 
 .conteneuractivity2 {
@@ -440,11 +490,12 @@ A C T I V I T Y
 .figureactivity {
     border-radius: 15px;
     box-shadow: 0 0 10px;
+    margin-top: 45px;
 }
 
 .nameactivity {
     margin-top: 25px;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 /*****
@@ -457,27 +508,14 @@ footer {
     margin-top: 55px;
 }
 
-.footer {
+.support {
     display: flex;
     padding: 0 2rem;
     width: 1440px;
     justify-content: space-between;
+    margin-left: -30px;
 }
 
 .help {
     font-weight: bold;
 }
-
-.all-host {
-    display: flex;
-    justify-content: space-around;
-}
-.tittle-stonks {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-/*****
-empiller elements css
-*****/
