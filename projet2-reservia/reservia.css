@@ -51,6 +51,21 @@ ul {
     margin-left: 1.5em;
 }
 
+.dispo-host a{
+    color: black;
+}
+
+.dispo-host2 a{
+    color: black;
+}
+.conteneuractivity a{
+    color: black;
+}
+
+.conteneuractivity2 a{
+    color: black;
+}
+
 /*****
 T E X T
 *****/
@@ -248,10 +263,6 @@ a {
     padding-top: 62px;
 }
 
-figure a {
-    color: black;
-}
-
 li a:hover {
     text-decoration: solid;
     color: blue;
@@ -391,7 +402,10 @@ P I C T U R E S__T R E N D
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 20px;
+}
+
+.dispo-host2 {
+    margin-top: 15px;
 }
 
 .star {
