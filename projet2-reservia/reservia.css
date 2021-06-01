@@ -70,6 +70,10 @@ ul {
 T E X T
 *****/
 
+h1{
+    font-size: 1.3em;
+}
+
 h2 {
      font-weight: bold;
      margin-left: 40px;
@@ -77,6 +81,7 @@ h2 {
 
  h3 {
      font-size: 1em ;
+     margin: 0;
  }
 
 h4 {
@@ -98,10 +103,10 @@ S E A R C H
 *****/
 
 .box-search {
-    border: 1px black unset;
+    border: 1px unset black;
     border-radius: 15px;
-    margin-left: 1.5em;
     display: flex;
+
 }
 
 .country {
@@ -112,6 +117,19 @@ S E A R C H
     padding: 13px;
     z-index: 1;
     position: relative;
+}
+
+input{
+    border: 1.5px solid #f2f2f2;
+    padding-left: 10px;
+}
+
+::placeholder{
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    padding-left: 10px;
+    font-size: 0.85em;
 }
 
 .search{
@@ -154,75 +172,71 @@ F I L T R E S
     display: flex;
 }
 .name-filtre {
-    margin-left: 15px;
+   margin-left: 13px;
+   margin-right: 22px;
 }
 
 .fa-money-bill-wave-alt {
     border-radius: 50%;
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-bottom: 12.5px;
-    padding-top: 12px;
+    padding-left: 14.5px;
+    padding-right: 14.5px;
+    padding-bottom: 15px;
+    padding-top: 14.5px;
     background-color: #deebff;
     position: relative;
     z-index: 1;
     display: flex;
     flex-wrap: wrap;
     color: #0065fc;
-    margin-left: -20px;
     }
 
 .fa-child {
     border-radius: 50%;
-    padding-left: 14.5px;
-    padding-right: 14.5px;
-    padding-bottom: 12px;
-    padding-top: 12.5px;
+    padding-left: 15.5px;
+    padding-right: 15.5px;
+    padding-bottom: 14px;
+    padding-top: 14.5px;
     background-color: #deebff;
     position: relative;
     z-index: 1;
     color: #0065fc;
-    margin-left: -20px;
 }
 
 .fa-heart {
     border-radius: 50%;
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-bottom: 12.5px;
-    padding-top: 12px;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-bottom: 14.5px;
+    padding-top: 14px;
     background-color: #deebff;
     position: relative;
     z-index: 1;
     color: #0065fc;
-    margin-left: -20px;
 }
 
 .fa-dog {
     border-radius: 50%;
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-bottom: 12.5px;
-    padding-top: 12px;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-bottom: 14.5px;
+    padding-top: 14px;
     background-color: #deebff;
     position: relative;
     z-index: 1;
     color: #0065fc;
-    margin-left: -20px;
 }
 
 .boutton2 {
     border-radius: 100px;
     background-color: white;
-    padding: 20px;
     margin-top: 10px;
-    height: 1px;
+    height: 45px;
     display: flex;
     align-items: center;
     font-weight: bold;
     position: relative;
     z-index: 0;
-    box-shadow: 0px 0px 15px #e8e8e8;
+    border: 1px solid #d9d9d9;
     margin-left: 25px;
 }
 
@@ -259,14 +273,23 @@ a {
     text-decoration: none;
 }
 
-.link-host, .link-activity, .link-signup {
+.link-host, .link-activity{
     padding-top: 62px;
+    margin: 20px;
+    color: black;
+}
+
+.link-signup{
+    padding-top: 62px;
+    margin: 20px;
+    color: #0065fc;
+    font-weight: bold;
 }
 
 li a:hover {
     text-decoration: solid;
-    color: blue;
-    border-top: 2px blue solid;
+    color: #106ffc;
+    border-top: 2px #106ffc solid;
 }
 
 #navigation {
@@ -279,7 +302,8 @@ li a:hover {
 }
 
 #activites {
-    margin-top: 45px;
+    margin-bottom: 0px;
+    margin-top: 60px;
 }
 
 
@@ -290,23 +314,28 @@ P I C T U R E S__H O S T
 .pic1 {
     display: flex;
     flex-direction: column;
-    margin-top: 10px;
+    margin-top: 4px;
+    margin-left: 4px;
+    margin-right: 4px;
     width: 231px;
     height: 108px;
-    margin: auto;
     box-sizing: border-box;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     object-fit: cover;
+    height: 113px;
+}
+
+.description{
+    margin-left: 8px;
 }
 
 figcaption {
-    margin-top: -15px;
-    margin-left: 10px;
+    margin: 0px;
 }
 
 figcaption p {
-    margin-top: -15px;
+    margin: 0;
 }
 
 .all-host {
@@ -319,11 +348,16 @@ figcaption p {
     background-color: white;
     border-radius: 15px;
     padding: 2.5px;
-    box-shadow: 0px 0px 15px #e8e8e8;
+    box-shadow: 0px 0px 15px #dddddd;
     box-sizing: border-box;
     align-items: center;
     margin: 21px;
     margin-top: 27px;
+    width: 245px;
+}
+
+.link-host5{
+    
 }
 
 .host2 {
@@ -333,9 +367,9 @@ figcaption p {
     border-radius: 15px;
     width: 342px;
     height: 144px;
-    box-shadow: 0px 0px 15px #e8e8e8;
     box-sizing: border-box;
     align-items: center;
+    box-shadow: 0px 0px 15px #dddddd;
 }
 
 .info {
@@ -383,9 +417,13 @@ P I C T U R E S__T R E N D
     flex-direction: column;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    width: 123px;
+    width: 126px;
     height: 135px;
     object-fit: cover;
+    margin-bottom: 4px;
+    margin-top: 4px;
+    margin-left: 4px;
+    box-shadow: #dddddd;
 }
 
 .background-host-stonks {
@@ -409,27 +447,30 @@ P I C T U R E S__T R E N D
 }
 
 .star {
-    margin-top: 55px;
+    margin-top: 60px;
 }
 
 .star2 {
-    margin-top: 38px;
-}
-
-.star3 {
     margin-top: 40px;
 }
 
+.star3 {
+    margin-top: 60px;
+}
+
 .chambreshotes {
-    margin-top: 4px;
+    margin-left: 10px;
+    margin-top: 10px;
 }
 
 .hotelsoleil {
-    margin-top: 5px;
+    margin-left: 10px;
+    margin-top: 10px;
 }
 
 .bleuetblanc {
-    margin-top: 5px;
+    margin-left: 10px;
+    margin-top: 10px;
 }
 
 /*****
@@ -498,7 +539,7 @@ A C T I V I T Y
 .conteneuractivity {
     display: flex;
     box-sizing: border-box;
-    margin-top: -45px;
+    margin: 0;
 }
 
 .conteneuractivity2 {
@@ -509,14 +550,31 @@ A C T I V I T Y
 .figureactivity {
     border-radius: 15px;
     box-shadow: 0px 0px 15px #e8e8e8;
-    margin-top: 45px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 0px;
+
+}
+
+.figureactivity figcaption{
+    height: 35px;
 }
 
 .nameactivity {
     margin-top: 25px;
     margin-left: 10px;
+}
+
+.link-activity1{
+    padding-top: 0px;
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.link-activity2{
+    padding-top: 10px;
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 /*****
@@ -537,13 +595,14 @@ footer {
     justify-content: space-between;
 }
 
-.support2
-{
+.support2{
     display: flex;
-    margin-left: -80px;
-    padding: 0 2rem;
     width: 1440px;
     justify-content: space-between;
+}
+
+.support2 ul{
+    padding: 0px;
 }
 
 .help {
