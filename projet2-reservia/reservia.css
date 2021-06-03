@@ -1,7 +1,28 @@
+/*****
+F O N T 
+*****/
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,200&display=swap');
 
+/*****
+M E D I A__Q U E R I E S
+*****/
+
+@media screen and (max-widht: 370px) {
+    .all-host{
+        display: flex;
+        flex-flow: column;
+    }
+
+    .h1{
+        color: #0065FC;
+    }
+}
+
+@media screen and (max-widht: 480px) {
+    
+}
 
 /*****
 G É N É R A L 
