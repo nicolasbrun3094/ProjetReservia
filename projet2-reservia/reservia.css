@@ -628,21 +628,12 @@ viewport ajouter au html
 
 @media screen and (max-width: 1024px) {
     
-    body{
-        background-color: red;
-    }
-    
 }
 
 @media screen and (max-width: 600px) {
     
-
     body{
-        background-color: blue;
-    }
-
-    .main{
-        flex-wrap: wrap;
+        margin: 0 50px 50px;
     }
 
     .link-host{
@@ -652,25 +643,51 @@ viewport ajouter au html
     }
 
     .link-activity{
+        justify-content: center;
         flex-wrap: wrap;
     }
+
     /*****
     H É B E R G E M E N T S
     *****/
 
     .all-host{
-        flex-flow: column;
-        flex-wrap: wrap;
-        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+
+    .host{
+        width: 332px;
+        height: 190px;
+    }
+
+    .pic1{
+        width: 324px;
+    }
+
+    .host2{
+        width: 332px;
+        height: 144px;
+    }
+
+    .pic2{
+        width: 126px;
+        height: 131px;
     }
 
     .background-host{
         flex-wrap: wrap;
+        background-color: white;
+    }
+
+    .dispo-host{
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: initial;
+        background-color: white;
     }
 
     .background-host-stonks{
         flex-wrap: wrap;
-        background-color: white;
     }
 
     /*****
@@ -679,5 +696,29 @@ viewport ajouter au html
 
     .figureactivity{
         flex-wrap: wrap;
+        height: 190px;
+        width: 322px;
+    }
+
+    .link-activity1{
+        flex-wrap: wrap;
+        height: 190px;
+        width: 322px;
+    }
+
+    .conteneuractivity{
+        flex-direction: column;
+    }
+
+    .vieux-port .fortpomegues .ilefrioul{
+        flex-wrap: wrap;
+    }
+
+    /*****
+    F O O T E E R 
+    *****/
+
+    footer{
+        flex-direction: column;
     }
 }
