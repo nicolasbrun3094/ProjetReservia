@@ -598,13 +598,11 @@ footer {
 .support {
     display: flex;
     padding: 0 2rem;
-    width: 1440px;
     justify-content: space-between;
 }
 
 .support2{
     display: flex;
-    width: 1440px;
     justify-content: space-between;
 }
 
@@ -632,8 +630,30 @@ viewport ajouter au html
 
 @media screen and (max-width: 600px) {
     
-    body{
-        margin: 0 50px 50px;
+    .main{
+        margin: 0px;
+    }
+
+    .activity-placement, .host-placement{
+        flex-wrap: wrap;
+        justify-content: center;
+        display: flex;
+    }
+
+    .iconefiltre{
+        margin: 0px;
+        flex-wrap: wrap;
+    }
+
+    .search{
+        border-radius: 15px;
+        width: 47px;
+        height: 50px;
+    }
+
+
+    .icone-search{
+        <i class="fas fa-search"></i>
     }
 
     .link-host{
@@ -651,13 +671,19 @@ viewport ajouter au html
     H É B E R G E M E N T S
     *****/
 
+
+    h2{
+        margin-left: 20px;
+    }
     .all-host{
         flex-direction: column-reverse;
+        height: initial;
     }
 
     .host{
         width: 332px;
         height: 190px;
+        margin: 15px;
     }
 
     .pic1{
@@ -667,6 +693,8 @@ viewport ajouter au html
     .host2{
         width: 332px;
         height: 144px;
+        margin: 15px;
+        margin-top: 10px;
     }
 
     .pic2{
@@ -677,6 +705,7 @@ viewport ajouter au html
     .background-host{
         flex-wrap: wrap;
         background-color: white;
+        height: initial;
     }
 
     .dispo-host{
@@ -690,6 +719,11 @@ viewport ajouter au html
         flex-wrap: wrap;
     }
 
+    .link-host5{
+        margin: initial;
+        margin-top: 10px;
+    }
+
     /*****
     A C T I V I T É S 
     *****/
@@ -700,8 +734,14 @@ viewport ajouter au html
         width: 322px;
     }
 
-    .link-activity1{
+    .fortpomegues, .ilefrioul, .vieux-port, .calanques, .notredame, .parc{
+        width: 100%;
+        height: 100%;
+    }
+    .link-activity1, .link-activity2{
         flex-wrap: wrap;
+        margin: 20px;
+        padding: 0px;
         height: 190px;
         width: 322px;
     }
@@ -714,11 +754,27 @@ viewport ajouter au html
         flex-wrap: wrap;
     }
 
+
+    /*** taille images 100% footer a regler enlever le 1440px
+
     /*****
     F O O T E E R 
     *****/
 
     footer{
         flex-direction: column;
+        height: initial;
+    }
+
+    .support{
+        padding: 0px;
+    }
+
+    .support-bis{
+        padding: 30px;
+    }
+
+    .support2 ul{
+        padding: 30px;
     }
 }
