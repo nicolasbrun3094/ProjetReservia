@@ -607,7 +607,8 @@ footer {
 }
 
 .support2 ul{
-    padding: 0px;
+    padding-left: 150px;
+    
 }
 
 .help {
@@ -625,13 +626,43 @@ viewport ajouter au html
 
 
 @media screen and (max-width: 1024px) {
-    
+    .main{
+        margin: 20px;
+    }
+
+    .all-host{
+        flex-direction: column-reverse;
+        height: initial;
+    }
+
+    .background-host{
+        background-color: initial;
+    }
+
+    .background-host-stonks{
+        justify-content: initial;
+        height: initial;
+        width: initial;
+    }
+
+    .dispo-host2{
+        display: flex;
+    }
+
+    .fortpomegues, .ilefrioul, .vieux-port, .calanques, .notredame, .parc{
+        width: 100%;
+        height: 100%;
+    }
+
+    .conteneuractivity{
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 600px) {
     
     .main{
-        margin: 0px;
+        margin: 10px;
     }
 
     .activity-placement, .host-placement{
@@ -652,9 +683,9 @@ viewport ajouter au html
     }
 
 
-    .icone-search{
+    /*.icone-search{
         <i class="fas fa-search"></i>
-    }
+    }*/
 
     .link-host{
         flex-wrap: wrap;
@@ -675,6 +706,7 @@ viewport ajouter au html
     h2{
         margin-left: 20px;
     }
+    
     .all-host{
         flex-direction: column-reverse;
         height: initial;
@@ -715,8 +747,14 @@ viewport ajouter au html
         background-color: white;
     }
 
+    .dispo-host2{
+        flex-direction: column;
+        justify-content: center;
+    }
+
     .background-host-stonks{
         flex-wrap: wrap;
+        width: 405px;
     }
 
     .link-host5{
