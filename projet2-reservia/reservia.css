@@ -645,6 +645,10 @@ viewport ajouter au html
         width: initial;
     }
 
+    .host2{
+        
+    }
+
     .dispo-host2{
         display: flex;
     }
@@ -656,6 +660,10 @@ viewport ajouter au html
 
     .conteneuractivity{
         flex-direction: column;
+    }
+
+    .figureactivity{
+        height: 100px;
     }
 }
 
