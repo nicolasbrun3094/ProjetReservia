@@ -31,6 +31,7 @@
                 <p>En plein centre ville ou en pleine nature</p>
             </div>
             <!--S E A R C H-->
+            <div class="bar-one">
                 <form method="POST" action="traitement.php" class="box-search">
                     <label for="country" class="country">
                         <i class="fas fa-map-marker-alt"></i>
@@ -40,6 +41,18 @@
                         <span class="icone-search">Recherche</span>
                     </button>
                 </form>
+            </div>
+            <div class="bar-two">
+                <form method="POST" action="traitement.php" class="box-search">
+                    <label for="country" class="country">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </label>
+                    <input class="town" type="text" name="country" id="country" placeholder="Marseille,France"/>
+                    <button class="search">
+                        <span class="icone-search"><i class="fas fa-search"></i></span>
+                    </button>
+                </form>
+            </div>
             <!--F I L T R E S-->
             <div class="filtres">
                 <h4>Filtres</h4>
