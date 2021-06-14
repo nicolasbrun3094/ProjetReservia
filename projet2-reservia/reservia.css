@@ -158,6 +158,10 @@ input{
     z-index: 1;
 }
 
+.bar-two{
+    display: none;
+}
+
 /*****
 F I L T R E S 
 *****/
@@ -630,6 +634,10 @@ viewport ajouter au html
         margin: 20px;
     }
 
+    .bar-two{
+        display: none;
+    }
+
     .all-host{
         flex-direction: column-reverse;
         height: initial;
@@ -637,6 +645,8 @@ viewport ajouter au html
 
     .background-host{
         background-color: initial;
+        height: initial;
+        width: initial;
     }
 
     .background-host-stonks{
@@ -663,14 +673,38 @@ viewport ajouter au html
     }
 
     .figureactivity{
-        height: 100px;
+        margin-top: 40px;
     }
 }
 
 @media screen and (max-width: 600px) {
     
+    header{
+        display: initial;
+    }
+
     .main{
-        margin: 10px;
+        margin: 0px;
+    }
+
+    .link-signup{
+        position: absolute;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .link-host, .link-activity{
+        padding: initial;
+        border-bottom: 2px solid #f2f2f2;
+
+    }
+
+    li a:hover {
+        padding-bottom: 10px;
+        text-decoration: solid;
+        color: #106ffc;
+        border-bottom: 2px #106ffc solid;
+        border-top: initial;
     }
 
     .activity-placement, .host-placement{
@@ -690,10 +724,9 @@ viewport ajouter au html
         height: 50px;
     }
 
-
-    /*.icone-search{
-        <i class="fas fa-search"></i>
-    }*/
+    .bar-one{
+        display: none;
+    }
 
     .link-host{
         flex-wrap: wrap;
@@ -743,9 +776,11 @@ viewport ajouter au html
     }
 
     .background-host{
+        border-radius: initial;
         flex-wrap: wrap;
         background-color: white;
         height: initial;
+        width: initial;
     }
 
     .dispo-host{
@@ -761,8 +796,9 @@ viewport ajouter au html
     }
 
     .background-host-stonks{
+        border-radius: initial;
         flex-wrap: wrap;
-        width: 405px;
+        min-width: 405px;
     }
 
     .link-host5{
@@ -776,8 +812,8 @@ viewport ajouter au html
 
     .figureactivity{
         flex-wrap: wrap;
-        height: 190px;
-        width: 322px;
+        width: 334px;
+        margin-top: 40px;
     }
 
     .fortpomegues, .ilefrioul, .vieux-port, .calanques, .notredame, .parc{
@@ -788,8 +824,6 @@ viewport ajouter au html
         flex-wrap: wrap;
         margin: 20px;
         padding: 0px;
-        height: 190px;
-        width: 322px;
     }
 
     .conteneuractivity{
@@ -824,3 +858,5 @@ viewport ajouter au html
         padding: 30px;
     }
 }
+
+/*** marges des balises, position absolut sur s'inscrire, height lien et figure, 1025 1080 height**/
