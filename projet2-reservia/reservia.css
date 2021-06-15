@@ -1,6 +1,7 @@
 /*****
 F O N T 
 *****/
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,200&display=swap');
@@ -60,6 +61,7 @@ ul {
 .dispo-host2 a{
     color: black;
 }
+
 .conteneuractivity a{
     color: black;
 }
@@ -108,7 +110,6 @@ S E A R C H
     border: 1px unset black;
     border-radius: 15px;
     display: flex;
-
 }
 
 .country {
@@ -150,16 +151,16 @@ input{
     align-items: center;
 }
 
+.bar-two{
+    display: none;
+}
+
 .town {
     height: 40px;
     width: 230px;
     font-size: 1.25em;
     position: relative;
     z-index: 1;
-}
-
-.bar-two{
-    display: none;
 }
 
 /*****
@@ -611,8 +612,12 @@ footer {
 }
 
 .support2 ul{
-    padding-left: 150px;
+    padding-left: 185px;
     
+}
+
+.last-support{
+    padding-left: 250px;
 }
 
 .help {
@@ -630,12 +635,9 @@ viewport ajouter au html
 
 
 @media screen and (max-width: 1024px) {
+    
     .main{
         margin: 20px;
-    }
-
-    .bar-two{
-        display: none;
     }
 
     .all-host{
@@ -655,13 +657,36 @@ viewport ajouter au html
         width: initial;
     }
 
+    .pic2{
+        width: 230px;
+        border-bottom-left-radius: initial;
+        border-top-right-radius: 15px;
+    }
+
     .host2{
-        
+        flex-direction: column;
+        width: 245px;
+        height: 250px;
     }
 
     .dispo-host2{
         display: flex;
     }
+
+    .hotelsoleil, .bleuetblanc{
+        margin-right: 30px;
+        margin-left: 0px;
+    }
+
+    .star, .star3{
+        margin-top: 35px;
+    }
+
+    .star2{
+        margin-top: 15px;
+    }
+
+
 
     .fortpomegues, .ilefrioul, .vieux-port, .calanques, .notredame, .parc{
         width: 100%;
@@ -673,7 +698,19 @@ viewport ajouter au html
     }
 
     .figureactivity{
-        margin-top: 40px;
+        height: 200px;
+    }
+
+    .support2 ul{
+        padding-left: 100px;
+    }
+
+    .support-bis{
+        padding: 20px;
+    }
+
+    .last-support{
+        padding-left: 150px;
     }
 }
 
@@ -687,8 +724,39 @@ viewport ajouter au html
         margin: 0px;
     }
 
+    .description{
+        margin-left: 20px;
+    }
+
+
+    .box-search{
+        margin-left: 20px;
+    }
+
+    .search{
+        display: none;
+    }
+
+    .bar-two{
+        display: initial;
+        background-color: #0065fc;
+        color: white;
+        border-radius: 15%;
+        height: 45px;
+        width: 50px;
+        justify-content: space-around;
+        font-size: 1.25em;
+        position: relative;
+        z-index: 0;
+        display: flex;
+        border-style: none;
+        align-items: center;
+    }
+
     .link-signup{
         position: absolute;
+        right: 23px;
+        top: 43px;
         padding: 0px;
         margin: 0px;
     }
@@ -722,10 +790,6 @@ viewport ajouter au html
         border-radius: 15px;
         width: 47px;
         height: 50px;
-    }
-
-    .bar-one{
-        display: none;
     }
 
     .link-host{
@@ -764,6 +828,7 @@ viewport ajouter au html
     }
 
     .host2{
+        flex-direction: initial;
         width: 332px;
         height: 144px;
         margin: 15px;
@@ -801,6 +866,10 @@ viewport ajouter au html
         min-width: 405px;
     }
 
+    .hotelsoleil, .bleuetblanc{
+        margin-left: 10px;
+    }
+
     .link-host5{
         margin: initial;
         margin-top: 10px;
@@ -813,12 +882,12 @@ viewport ajouter au html
     .figureactivity{
         flex-wrap: wrap;
         width: 334px;
-        margin-top: 40px;
+        height: 190px;
     }
 
     .fortpomegues, .ilefrioul, .vieux-port, .calanques, .notredame, .parc{
-        width: 100%;
-        height: 100%;
+        width: 334px;
+        height: 133px;
     }
     .link-activity1, .link-activity2{
         flex-wrap: wrap;
@@ -857,6 +926,12 @@ viewport ajouter au html
     .support2 ul{
         padding: 30px;
     }
+
+    .last-support{
+        padding-left: 30px;
+    }
 }
 
-/*** marges des balises, position absolut sur s'inscrire, height lien et figure, 1025 1080 height**/
+/*** marges des balises, position absolut sur s'inscrire, height lien et figure, 1025 1080 height
+taille vignette divisé taille de screen X 100 pour les formats obtenir le pourcentage
+**/
