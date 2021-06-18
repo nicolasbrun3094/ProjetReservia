@@ -177,6 +177,7 @@ F I L T R E S
 .iconefiltre{
     margin-left: 30px;
     display: flex;
+    flex-wrap: wrap;
 }
 .name-filtre {
    margin-left: 13px;
@@ -372,7 +373,6 @@ figcaption p {
     padding: 3px;
     background-color: white;
     border-radius: 15px;
-    width: 342px;
     height: 144px;
     box-sizing: border-box;
     align-items: center;
@@ -394,7 +394,7 @@ figcaption p {
 .background-host {
     background-color:#F2F2F2;
     border-radius: 15px;
-    width: 870px;
+    width: 66.5%;
     height: 625px;
 }
 
@@ -436,7 +436,7 @@ P I C T U R E S__T R E N D
 .background-host-stonks {
     background-color:#F2F2F2;
     border-radius: 15px;
-    width: 405px;
+    width: 31.5%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -506,10 +506,11 @@ A C T I V I T Y
 
 .vieux-port{
     object-fit: cover;
+    width: 100%;
 }
 
 .ilefrioul {
-    width: 300px;
+    width: 100%;
     height: 160px;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
@@ -517,7 +518,7 @@ A C T I V I T Y
 }
 
 .fortpomegues {
-    width: 300px;
+    width: 100%;
     height: 240px;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
@@ -525,7 +526,7 @@ A C T I V I T Y
 }
 
 .notredame {
-    width: 300px;
+    width: 100%;
     height: 192px;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
@@ -533,7 +534,7 @@ A C T I V I T Y
 }
 
 .parc {
-    width: 300px;
+    width: 100%;
     height: 207px;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
@@ -542,7 +543,7 @@ A C T I V I T Y
 
 .calanques {
     height: 500px;
-    width: 300px;
+    width: 100%;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
     object-fit: cover;
@@ -654,11 +655,11 @@ viewport ajouter au html
     .background-host-stonks{
         justify-content: initial;
         height: initial;
-        min-width: 900px;
+        width: 100%;
     }
 
     .pic2{
-        width: 780px;
+        width: 98%;
         height: 165px;
         border-bottom-left-radius: initial;
         border-top-right-radius: 15px;
@@ -667,7 +668,7 @@ viewport ajouter au html
     .host2{
         flex-direction: column;
         justify-content: flex-end;
-        width: 800px;
+        width: 92.5%;
         height: 250px;
     }
 
@@ -718,6 +719,11 @@ viewport ajouter au html
 
     .last-support{
         padding-left: 150px;
+    }
+
+    footer{
+        width: 100%;
+        height: 100%;
     }
 }
 
@@ -870,7 +876,7 @@ viewport ajouter au html
         flex-wrap: wrap;
         background-color: white;
         height: initial;
-        width: initial;
+        width: 100%;
     }
 
     .dispo-host{
