@@ -325,7 +325,7 @@ P I C T U R E S__H O S T
     margin-top: 4px;
     margin-left: 4px;
     margin-right: 4px;
-    width: 231px;
+    width: 96%;
     height: 108px;
     box-sizing: border-box;
     border-top-left-radius: 15px;
@@ -360,10 +360,11 @@ figcaption p {
     box-sizing: border-box;
     align-items: center;
     margin: 0px;
-    width: 245px;
+    width: 100%;
 }
 
 .link-host5{
+    width: 26.5%;
     margin: 21px;
     margin-top: 27px;
 }
@@ -660,7 +661,7 @@ viewport ajouter au html
 
     .pic2{
         width: 98%;
-        height: 165px;
+        height: 172px;
         border-bottom-left-radius: initial;
         border-top-right-radius: 15px;
     }
@@ -668,7 +669,6 @@ viewport ajouter au html
     .host2{
         flex-direction: column;
         justify-content: flex-end;
-        width: 92.5%;
         height: 250px;
     }
 
@@ -710,7 +710,7 @@ viewport ajouter au html
     }
 
     .support2 ul{
-        padding-left: 100px;
+        padding-left: 35px;
     }
 
     .support-bis{
@@ -718,7 +718,9 @@ viewport ajouter au html
     }
 
     .last-support{
-        padding-left: 150px;
+        padding-left: 105px;
+        margin-top: 35px;
+        margin-right: 20px;
     }
 
     footer{
@@ -743,8 +745,8 @@ viewport ajouter au html
         top: 30px;
     }
 
-    .navigation{
-        margin-left: 50px;
+    nav ul{
+        padding: 0px;
     }
 
     .description{
@@ -788,7 +790,7 @@ viewport ajouter au html
         padding: initial;
         border-bottom: 2px solid #f2f2f2;
         margin-top: 45px;
-        font-size: ;
+        width: 50%;
 
     }
 
@@ -804,6 +806,11 @@ viewport ajouter au html
         flex-wrap: wrap;
         justify-content: center;
         display: flex;
+        width: 50%;
+    }
+
+    .filtres{
+        flex-direction: column;
     }
 
     .iconefiltre{
@@ -843,19 +850,19 @@ viewport ajouter au html
     }
 
     .host{
-        width: 332px;
+        width: 92%;
         height: 190px;
         margin: 15px;
     }
 
     .pic1{
-        width: 324px;
+        width: 97.5%;
     }
 
     .host2{
         flex-direction: initial;
-        width: 332px;
         height: 144px;
+        width: 92%;
         margin: 15px;
         margin-top: 10px;
     }
@@ -865,7 +872,7 @@ viewport ajouter au html
     }
 
     .pic2{
-        width: 126px;
+        width: 40%;
         height: 131px;
         border-bottom-left-radius: 15px;
         border-top-right-radius: initial;
@@ -898,7 +905,7 @@ viewport ajouter au html
     .background-host-stonks{
         border-radius: initial;
         flex-wrap: wrap;
-        min-width: 405px;
+        width: 100%;
     }
 
     .hotelsoleil, .bleuetblanc{
@@ -924,8 +931,12 @@ viewport ajouter au html
 
     .figureactivity{
         flex-wrap: wrap;
-        width: 334px;
+        width: 100%;
         height: 190px;
+    }
+
+    .link-host5{
+        width: 100%;
     }
 
     .nameactivity{
@@ -933,7 +944,7 @@ viewport ajouter au html
     }
 
     .fortpomegues, .ilefrioul, .vieux-port, .calanques, .notredame, .parc{
-        width: 334px;
+        width: 100%;
         height: 133px;
     }
     .link-activity1, .link-activity2{
