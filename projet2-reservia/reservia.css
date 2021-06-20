@@ -425,7 +425,7 @@ P I C T U R E S__T R E N D
     flex-direction: column;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    width: 126px;
+    width: 40%;
     height: 135px;
     object-fit: cover;
     margin-bottom: 4px;
@@ -455,7 +455,7 @@ P I C T U R E S__T R E N D
 }
 
 .star {
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 .star2 {
@@ -463,7 +463,7 @@ P I C T U R E S__T R E N D
 }
 
 .star3 {
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 .chambreshotes {
@@ -635,6 +635,39 @@ adentation html , ok
 viewport ajouter au html
 *****/
 
+@media screen and (max-width: 1310px) {
+    .description{
+        font-size: 0.7em;
+    }
+
+    .hotelsoleil, .chambreshotes, .bleuetblanc{
+        font-size: 0.85em;
+    }
+
+    .star2{
+        margin-top: 20px;
+    }
+
+    .background-host{
+        height: 590px;
+    }
+
+    .background-host-stonks{
+        height: 590px;
+    }
+
+    .host2{
+        height: 125px;
+    }
+
+    .pic2{
+        height: 115px;
+    }
+
+    .nameactivity{
+        font-size: 12px;
+    }
+}
 
 @media screen and (max-width: 1024px) {
     
@@ -661,7 +694,7 @@ viewport ajouter au html
 
     .pic2{
         width: 98%;
-        height: 172px;
+        height: 180px;
         border-bottom-left-radius: initial;
         border-top-right-radius: 15px;
     }
@@ -670,6 +703,10 @@ viewport ajouter au html
         flex-direction: column;
         justify-content: flex-end;
         height: 250px;
+    }
+
+    .description{
+        font-size: 1em;
     }
 
     .dispo-host2{
@@ -684,6 +721,7 @@ viewport ajouter au html
 
     .chambreshotes, .hotelsoleil, .bleuetblanc{
         display: contents;
+        font-size: 1em;
     }
 
     .star, .star3{
@@ -694,7 +732,9 @@ viewport ajouter au html
         margin-top: 5px;
     }
 
-
+    .nameactivity{
+        font-size: 1em;
+    }
 
     .fortpomegues, .ilefrioul, .vieux-port, .calanques, .notredame, .parc{
         width: 100%;
