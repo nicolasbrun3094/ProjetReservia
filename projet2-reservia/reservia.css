@@ -653,7 +653,7 @@ M E D I A__Q U E R I E S
     }
 
     .figureactivity{
-        max-width: initial;
+        max-width: 300px;
     }
 
 }
@@ -662,6 +662,10 @@ M E D I A__Q U E R I E S
     
     .main{
         margin: 20px;
+    }
+
+    .figureactivity{
+        max-width: initial;
     }
 
     /*****
