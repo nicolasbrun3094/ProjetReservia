@@ -102,10 +102,6 @@ H E A D E R
     
 }
 
-/*****
-S E A R C H 
-*****/
-
 .box-search {
     border: 1px unset black;
     border-radius: 15px;
@@ -161,6 +157,53 @@ input{
     font-size: 1.25em;
     position: relative;
     z-index: 1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+}
+
+nav li {
+        margin-right: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.link-host, .link-activity{
+    padding-top: 62px;
+    margin: 20px;
+    color: black;
+}
+
+.link-signup{
+    padding-top: 62px;
+    margin: 20px;
+    color: #0065fc;
+    font-weight: bold;
+}
+
+li a:hover {
+    text-decoration: solid;
+    color: #106ffc;
+    border-top: 2px #106ffc solid;
+}
+
+#navigation {
+    justify-content: flex-end;
+    display: flex;
+}
+
+#hebergements {
+    margin-top: 45px;
+}
+
+#activites {
+    margin-bottom: 0px;
+    margin-top: 60px;
 }
 
 /*****
@@ -263,60 +306,11 @@ F I L T R E S
     margin-right: 65px;
 }
 
-/*****
-N A V I G A T I O N 
-*****/
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: right;
-}
-
-nav li {
-        margin-right: 15px;
-}
-
-a {
-    text-decoration: none;
-}
-
-.link-host, .link-activity{
-    padding-top: 62px;
-    margin: 20px;
-    color: black;
-}
-
-.link-signup{
-    padding-top: 62px;
-    margin: 20px;
-    color: #0065fc;
-    font-weight: bold;
-}
-
-li a:hover {
-    text-decoration: solid;
-    color: #106ffc;
-    border-top: 2px #106ffc solid;
-}
-
-#navigation {
-    justify-content: flex-end;
-    display: flex;
-}
-
-#hebergements {
-    margin-top: 45px;
-}
-
-#activites {
-    margin-bottom: 0px;
-    margin-top: 60px;
-}
 
 
 /*****
-P I C T U R E S__H O S T 
+H O S T 
 *****/
 
 .pic1 {
@@ -466,17 +460,7 @@ P I C T U R E S__T R E N D
     margin-top: 40px;
 }
 
-.chambreshotes {
-    margin-left: 10px;
-    margin-top: 10px;
-}
-
-.hotelsoleil {
-    margin-left: 10px;
-    margin-top: 10px;
-}
-
-.bleuetblanc {
+.chambreshotes, .hotelsoleil, .bleuetblanc {
     margin-left: 10px;
     margin-top: 10px;
 }
@@ -628,11 +612,6 @@ footer {
 
 /*****
 M E D I A__Q U E R I E S
-taille max mobile, puis gerer en fonction de la resolution inferieur 
-de meme sur tablette
-flex wrap
-adentation html , ok
-viewport ajouter au html
 *****/
 
 @media screen and (max-width: 1310px) {
@@ -684,6 +663,10 @@ viewport ajouter au html
     .main{
         margin: 20px;
     }
+
+    /*****
+    H O S T 
+    *****/
 
     .all-host{
         flex-direction: column-reverse;
@@ -745,6 +728,10 @@ viewport ajouter au html
         width: 25.8%;
     }
 
+    /******
+    A C T I V I T Y 
+    *****/
+
     .nameactivity{
         font-size: 1em;
     }
@@ -791,12 +778,24 @@ viewport ajouter au html
 
 @media screen and (max-width: 600px) {
     
-    header{
-        display: initial;
-    }
-
     .main{
         margin: 0px;
+    }
+
+    /*****
+    T E X T
+    *****/
+
+    h2{
+        margin-left: 20px;
+    }
+
+    /*****
+    H E A D E R 
+    *****/
+
+    header{
+        display: initial;
     }
 
     #logo_reservia{
@@ -874,6 +873,10 @@ viewport ajouter au html
         width: 50%;
     }
 
+    /*****
+    F I L T R E S 
+    *****/
+
     .filtres{
         flex-direction: column;
         margin-top: 0px;
@@ -902,13 +905,8 @@ viewport ajouter au html
     }
 
     /*****
-    H É B E R G E M E N T S
+    H O S T 
     *****/
-
-
-    h2{
-        margin-left: 20px;
-    }
     
     .all-host{
         flex-direction: column-reverse;
@@ -996,7 +994,7 @@ viewport ajouter au html
     }
 
     /*****
-    A C T I V I T É S 
+    A C T I V I T Y 
     *****/
 
     .figureactivity{
