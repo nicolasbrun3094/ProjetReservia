@@ -565,7 +565,7 @@ A C T I V I T Y
     border-radius: 15px;
     box-shadow: 0px 0px 15px #e8e8e8;
     margin: 0px;
-
+    max-width: 300px;
 }
 
 .figureactivity figcaption{
@@ -636,12 +636,17 @@ viewport ajouter au html
 *****/
 
 @media screen and (max-width: 1310px) {
+    
     .description{
         font-size: 0.7em;
     }
 
     .hotelsoleil, .chambreshotes, .bleuetblanc{
         font-size: 0.85em;
+    }
+
+    .star, .star3{
+        margin-top: 25px;
     }
 
     .star2{
@@ -667,6 +672,11 @@ viewport ajouter au html
     .nameactivity{
         font-size: 12px;
     }
+
+    .figureactivity{
+        max-width: initial;
+    }
+
 }
 
 @media screen and (max-width: 1024px) {
@@ -701,7 +711,6 @@ viewport ajouter au html
 
     .host2{
         flex-direction: column;
-        justify-content: flex-end;
         height: 250px;
     }
 
@@ -721,7 +730,7 @@ viewport ajouter au html
 
     .chambreshotes, .hotelsoleil, .bleuetblanc{
         display: contents;
-        font-size: 1em;
+        font-size: 0.9em;
     }
 
     .star, .star3{
@@ -730,6 +739,10 @@ viewport ajouter au html
 
     .star2{
         margin-top: 5px;
+    }
+
+    .link-host5{
+        width: 25.8%;
     }
 
     .nameactivity{
@@ -769,6 +782,13 @@ viewport ajouter au html
     }
 }
 
+@media screen and (max-width:866px) {
+    
+    .description{
+        font-size: 0.65em;
+    }
+}
+
 @media screen and (max-width: 600px) {
     
     header{
@@ -795,11 +815,16 @@ viewport ajouter au html
 
 
     .box-search{
-        margin-left: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
     .search{
         display: none;
+    }
+
+    .town{
+        width: 100%;
     }
 
     .bar-two{
@@ -851,6 +876,7 @@ viewport ajouter au html
 
     .filtres{
         flex-direction: column;
+        margin-top: 0px;
     }
 
     .iconefiltre{
@@ -891,7 +917,7 @@ viewport ajouter au html
 
     .host{
         width: 92%;
-        height: 190px;
+        height: 185px;
         margin: 15px;
     }
 
@@ -909,6 +935,10 @@ viewport ajouter au html
 
     .chambreshotes, .hotelsoleil, .bleuetblanc{
         display: initial;
+    }
+
+    .description{
+        font-size: 1em;
     }
 
     .pic2{
@@ -957,7 +987,7 @@ viewport ajouter au html
     }
 
     .star, .star2, .star3{
-        margin-top: 10px;
+        margin-top: 50px;
     }
 
     .link-host5{
@@ -1001,9 +1031,6 @@ viewport ajouter au html
         flex-wrap: wrap;
     }
 
-
-    /*** taille images 100% footer a regler enlever le 1440px
-
     /*****
     F O O T E E R 
     *****/
@@ -1029,7 +1056,3 @@ viewport ajouter au html
         padding-left: 30px;
     }
 }
-
-/*** marges des balises, position absolut sur s'inscrire, height lien et figure, 1025 1080 height
-taille vignette divisé taille de screen X 100 pour les formats obtenir le pourcentage
-**/
