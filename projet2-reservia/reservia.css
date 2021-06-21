@@ -103,7 +103,7 @@ H E A D E R
 }
 
 .box-search {
-    border: 1px unset black;
+    border: 1px black;
     border-radius: 15px;
     display: flex;
 }
@@ -425,7 +425,7 @@ P I C T U R E S__T R E N D
     margin-bottom: 4px;
     margin-top: 4px;
     margin-left: 4px;
-    box-shadow: #dddddd;
+    box-shadow: 0px 0px 15px #dddddd;
 }
 
 .background-host-stonks {
