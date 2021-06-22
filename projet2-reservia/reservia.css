@@ -857,7 +857,11 @@ M E D I A__Q U E R I E S
 
     /***link***/
 
-    .link-host, .link-activity a:hover{
+    nav li{
+        margin-right: 0px;
+    }
+
+    .link-host .link-activity:hover{
         color: #0065FC;
     }
 
