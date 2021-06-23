@@ -911,6 +911,7 @@ M E D I A__Q U E R I E S
     .link-host{
         flex-wrap: wrap;
         border-top: none;
+        color: black;
     }
 
     .link-activity{
