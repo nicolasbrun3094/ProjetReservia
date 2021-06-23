@@ -817,7 +817,6 @@ M E D I A__Q U E R I E S
         margin-left: 20px;
     }
 
-
     .box-search{
         margin-left: 10px;
         margin-right: 10px;
@@ -855,8 +854,6 @@ M E D I A__Q U E R I E S
         margin: 0px;
     }
 
-    /***link***/
-
     nav li{
         margin-right: 0px;
     }
@@ -872,7 +869,8 @@ M E D I A__Q U E R I E S
         width: 100%;
         text-align: center;
         padding: 15px;
-
+        margin-left: 0px;
+        margin-right: 0px;
     }
 
     li a:hover {
